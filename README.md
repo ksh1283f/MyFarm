@@ -7,7 +7,7 @@
 
 ![https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=flat&logo=unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=flat&logo=unity)
 
-![Title](./Field/Imgs/ExampleImage.png)
+![Title](./Field/Imgs/ExampleImage.PNG)
 
 ## Contents
 
@@ -55,6 +55,6 @@
         2. 이 때, 집에 저장된 나무 수가 4씩 감소하고 남은 턴 횟수가 1씩 감소하며 턴이 0이 될 시 게임이 끝납니다.
     
     2.  비축된 나무가 없을 때의 패널티
-		![lumberPenalty](./Field/Imgs/lumberPenalty.png)
+		![lumberPenalty](./Field/Imgs/lumberPenalty.PNG)
 		1. 만약 나무가 부족할 시 패널티를 부여받게 됩니다.
 		2. 패널티가 쌓이면 체력 회복량이 줄어들며 다음 턴에서 할 수 있는 행동이 제한되므로 항상 충분한 양의 나무를 비축해야합니다.
