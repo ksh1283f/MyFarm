@@ -136,12 +136,7 @@ public class GameStatus : MonoBehaviour
         this.guistyle.fontSize = 24; // 폰트 크기를 24로.
         OnUpdateGameInfo(Hp, Gold, RemainLumberCount, penalty);
     }
-   
-    // 우주선 수리를 진행
-    public void addRepairment(float add)
-    {
-        this.repairment = Mathf.Clamp01(this.repairment + add); // 0.0~1.0 강제 지정
-    }
+
     // 체력을 늘리거나 줄임
     public void addSatiety(float add)
     {
