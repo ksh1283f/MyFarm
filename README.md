@@ -1,52 +1,60 @@
+# Untitled
+
 # MyFarm
 
+> MyFarm은 농사를 통해서 최대한 많은 돈을 버는 게임입니다. 플레이어는 10일 동안 제한된 체력으로 농사도 짓고 쉬는 동안 필요한 나무도 비축하면서 효율적으로 체력을 사용해야합니다.
+> 
 
-<img width = "400" src = "https://user-images.githubusercontent.com/16252688/94056167-e56cbb80-fe18-11ea-84d8-bacd91bae638.PNG">
+![https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=flat&logo=unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=flat&logo=unity)
 
-<게임방법>
-돈을 최대한 많이 모으는 게임입니다.
-<br><img width = '200' src = "https://user-images.githubusercontent.com/16252688/94056175-e7367f00-fe18-11ea-93e8-f258db562531.PNG"><br>
-돈은 모은 과일들을 우체통에 팔아서 모을 수 있습니다.
+![Title](./Field/Imgs/ExampleImage.png)
 
-기본 방법
+## Contents
 
-<img src = "https://user-images.githubusercontent.com/16252688/94056182-e998d900-fe18-11ea-8d40-0c5b692d8298.PNG">
-
-나무를 모아서 집에 저장한다
-
-<img src = "https://user-images.githubusercontent.com/16252688/94056184-eaca0600-fe18-11ea-86cf-5f0b2a7bf1fe.PNG">
-필드에 있는 과일을 채집한다
-과일을 판매하여 돈을 모은다.
-
-<img src = "https://user-images.githubusercontent.com/16252688/94056190-ec93c980-fe18-11ea-8bae-396bc6151986.PNG">
-과일을 채집하여 얻은 씨앗을 밭에 심어서 물을 준다.
-잠을 잘때마다 1턴씩 지나가고 물을 준 작물이 성장한다
-수확이 가능한 작물은 위에 오브젝트가 표시되어 가능함을 알린다
-10턴이 모두 지나면 현재 자신이 모은 돈을 가지고 점수를 계산합니다.
-
-상세설명
-
-<img width = "400" src = "https://user-images.githubusercontent.com/16252688/94056155-e0a80780-fe18-11ea-9e47-74b17477de37.PNG">
-
-필드에는 4가지 종류의 오브젝트가 있습니다.
-
-
-집: 모은 나무를 저장하거나 잠을 자서 기력을 회복할 수 있습니다.
-우체통: 모은 과일들을 판매할 수 있습니다.
-
-<div>
- <img width = "400" src = "https://user-images.githubusercontent.com/16252688/94056164-e3a2f800-fe18-11ea-81bd-89f10f323562.PNG">
- <img width = "400" src = "https://user-images.githubusercontent.com/16252688/94056158-e1409e00-fe18-11ea-84f1-f5ea49518c52.PNG">
- <img width = "400" src = "https://user-images.githubusercontent.com/16252688/94056165-e43b8e80-fe18-11ea-83e5-eb27c088dee8.PNG">
-</div>
-
-밭: 채집한 씨앗을 심고 물을 주어서 작물이 다 자라면 수확할 수 있습니다. 수확한 작물은 판매가 가능합니다.
-
-<img width = "400" src = "https://user-images.githubusercontent.com/16252688/94056148-de45ad80-fe18-11ea-9ebe-752303c2dbbe.PNG">
-
-나무와 과일: 필드에 주기적으로 생성됩니다. 나무는 모아서 집에 저장할 수 있고 과일은 모으면 과일과 씨앗을 모두 획득합니다.
-모든 행동에는 기력을 소모합니다. 특정 작물들(토마토, 포도(보라색과일), 딸기(모델링은 파인애플)) 수확을 제외한 모든 행동은 10의 기력을 소모합니다.
-기력이 모두 소모되면 잠을 자야됩니다. 잠을 잘때마다 저장된 나무가 4개씩 소모됩니다.
-만약 나무가 0개 밑으로 떨어지게되면 잠을 잤을때 기력회복량이 감소하게 됩니다.
-나무 저장량을 충분히 유지하면서 과일을 모은 후 판매하여 최대한 많은 돈을 모으면 됩니다.
- 
+- 농사
+<br><img width = '200' src = "[https://user-images.githubusercontent.com/16252688/94056175-e7367f00-fe18-11ea-93e8-f258db562531.PNG](https://user-images.githubusercontent.com/16252688/94056175-e7367f00-fe18-11ea-93e8-f258db562531.PNG)"><br>
+    1. 씨앗수집
+        
+		![GetFruitsAndSeed](./Field/Imgs/GetFruitsAndSeed.gif)
+        
+         과일을 줍게 되면 과일과 씨앗을 같이 획득할 수 있습니다.
+        
+        1. 과일은 판매하여 돈을 벌 수 있고 씨앗은 밭에서 농사를 지을 때 사용됩니다.
+        2. 과일을 줍게되면 체력을 10 소모합니다.
+        
+    2. 씨앗심기  및 물 주기
+        
+        ![PerformFarm](./Field/Imgs/PerformFarm.gif)
+        
+        씨앗을 심고 물을 주어 수확을 할 준비를 합니다.
+        
+        1. 과일마다 자라나는 시간이 다릅니다.
+        2. 씨앗심는 행동, 물을 주는 행동 모두 체력을 10 씩 소모합니다.
+        
+    
+    1. 수확 및 판매
+    
+    ![HarvestAndSell](./Field/Imgs/HarvestAndSell.gif)
+    
+    | 과일 | 재배시간 | 판매가격 |
+    | --- | --- | --- |
+    | 사과 | 1 | 10 |
+    | 옥수수 | 3 | 11 |
+    | 오렌지 | 2 | 10 |
+    | 토마토 | 3 | 15 |
+    | 포도 | 2 | 11 |
+    | 딸기 | 2 | 12 |
+    1. 수확한 작물은 우체통에서 판매할 수 있습니다.
+    2. 판매에는 체력이 10 소모됩니다.
+- 나무 저장
+    
+    ![CollectLumber](./Field/Imgs/CollectLumber.gif)
+    
+    1. 나무의 역할
+        1. 체력을 모두 소모하면 집에서 잠자기를 통해 체력을 회복할 수 있습니다.
+        2. 이 때, 집에 저장된 나무 수가 4씩 감소하고 남은 턴 횟수가 1씩 감소하며 턴이 0이 될 시 게임이 끝납니다.
+    
+    2.  비축된 나무가 없을 때의 패널티
+		![lumberPenalty](./Field/Imgs/lumberPenalty.png)
+		1. 만약 나무가 부족할 시 패널티를 부여받게 됩니다.
+		2. 패널티가 쌓이면 체력 회복량이 줄어들며 다음 턴에서 할 수 있는 행동이 제한되므로 항상 충분한 양의 나무를 비축해야합니다.
