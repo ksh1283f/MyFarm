@@ -11,7 +11,7 @@
 ## Contents
 
 - 농사
-<br><img width = '200' src = "[https://user-images.githubusercontent.com/16252688/94056175-e7367f00-fe18-11ea-93e8-f258db562531.PNG](https://user-images.githubusercontent.com/16252688/94056175-e7367f00-fe18-11ea-93e8-f258db562531.PNG)"><br>
+
     1. 씨앗수집
         
 		![GetFruitsAndSeed](./Field/Imgs/GetFruitsAndSeed.gif)
